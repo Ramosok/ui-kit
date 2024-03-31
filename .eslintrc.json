@@ -1,0 +1,100 @@
+{
+    "env": {
+        "browser": true,
+        "node": true,
+        "es6": true
+    },
+    "extends": [
+        "airbnb",
+        "airbnb-typescript",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:prettier/recommended",
+        "plugin:storybook/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2018,
+        "sourceType": "module",
+        "project": "./tsconfig.json"
+    },
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "paths": [
+                    "./src"
+                ]
+            }
+        }
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "no-magic-numbers": [
+            "error",
+            {
+                "ignore": [
+                    0,
+                    1,
+                    -1
+                ],
+                "ignoreArrayIndexes": true,
+                "ignoreDefaultValues": true,
+                "enforceConst": true
+            }
+        ],
+        "prettier/prettier": "error",
+        "no-use-before-define": "off",
+        "@typescript-eslint/no-explicit-any": "error",
+        "import/prefer-default-export": "off",
+        "no-console": "error",
+        "no-unused-vars": [
+            "error",
+            {
+                "vars": "all",
+                "args": "after-used"
+            }
+        ],
+        "import/order": "off",
+        "consistent-return": "off",
+        "react/button-has-type": "off",
+        "react/prop-types": "off",
+        "jsx-a11y/label-has-associated-control": "off",
+        "jsx-a11y/click-events-have-key-events": "off",
+        "jsx-a11y/no-static-element-interactions": "off",
+        "import/no-cycle": "off",
+        "@typescript-eslint/explicit-module-boundary-types": "error",
+        "react/jsx-filename-extension": [
+            2,
+            {
+                "extensions": [
+                    ".js",
+                    ".jsx",
+                    ".ts",
+                    ".tsx"
+                ]
+            }
+        ],
+        "jsx-a11y/control-has-associated-label": "off",
+        "@typescript-eslint/explicit-function-return-type": [
+            "error",
+            {
+                "allowExpressions": true
+            }
+        ],
+        "react/no-array-index-key": 1,
+        "react/function-component-definition": "off",
+        "react/require-default-props": "off",
+        "react/jsx-props-no-spreading": "off",
+        "no-param-reassign": [
+            "error",
+            {
+                "props": false
+            }
+        ]
+    }
+}

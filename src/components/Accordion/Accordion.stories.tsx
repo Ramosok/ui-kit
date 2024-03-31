@@ -20,7 +20,7 @@ export default {
 type AccordionStoryProps = Pick<AccordionProps, 'title' | 'children'>
 
 export const AccordionStoryTemplate: Story<AccordionStoryProps> = ({ ...args }) => (
-  <Accordion {...args} innerControl />
+  <Accordion {...args} innerControl children={<div>hello</div>}/>
 )
 
 AccordionStoryTemplate.storyName = 'Accordion'

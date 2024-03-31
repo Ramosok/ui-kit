@@ -1,6 +1,37 @@
-:root {
-  --primary: #E9530D;
-  --secondaryTextColor: #ffffff;
+$mainColor: #e8194b;
+$blue: #4262d1;
 
-  --semiBold: 600;
+:root {
+    --headerHeight: 8rem;
+    --appMinWidth: 32rem;
+
+    --mainBlue: #233572;
+    --mainRed: #e8194b;
+    --mainRedRGB: 232, 25, 75;
+    --pink: #edccd7;
+    --pinkLight: #faecf1;
+    --white: #fff;
+    --whiteRGB: 255, 255, 255;
+    --greyLight: #f1f3f5;
+    --greyLightRGB: 241, 243, 245;
+    --greyMiddleLight: #bdcbd3;
+    --greyMiddleLightRGB: 189, 203, 211;
+    --greyMiddleDark: #7c8c95;
+    --greyDark: #394e5a;
+    --greyDarkRGB: 57, 78, 90;
+    --error: #e00;
+    --blue: #4262d1;
+    --blueMiddle: #bfc8e5;
+    --blueMiddleRGB: 191, 200, 229;
+    --blueLight: #edf1ff;
+    --tertiaryGreen: #09c05d;
+    --tertiaryGreenLight: rgba(9, 192, 93, 0.5);
+
+    --mainColor: var(--mainRed);
+    --mainColorRGB: var(--mainRedRGB);
+
+    --mainColorMix: #{mix($mainColor, #000, 70%)};
+    --blueMix: #{mix($blue, #000, 70%)};
+
+    --semiBold: 600;
 }

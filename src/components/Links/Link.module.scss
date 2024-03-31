@@ -1,0 +1,47 @@
+.button {
+    background-color: inherit;
+    border: none;
+    padding: 0;
+}
+
+.link {
+    font-size: 1.5rem;
+    font-weight: var(--semiBold);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.primary {
+    color: var(--mainColor);
+    &:hover {
+        color: var(--mainColorMix);
+    }
+}
+
+.dark {
+    color: var(--greyDark);
+    &:hover {
+        color: var(--mainColor);
+    }
+}
+
+.light {
+    color: var(--greyMiddleDark);
+    &:hover {
+        color: var(--greyDark);
+    }
+}
+
+.white {
+    color: var(--white);
+    &:hover {
+        color: var(--greyMiddleLight);
+    }
+}
+
+.default {
+    color: var(--blue);
+    &:hover {
+        color: var(--blueMix);
+    }
+}

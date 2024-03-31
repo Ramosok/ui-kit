@@ -1,0 +1,43 @@
+.content {
+    z-index: 1000;
+    display: none;
+
+    &.opened {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        box-sizing: border-box;
+        left: 0;
+        top: 6rem;
+        list-style-type: none;
+        max-height: 30rem;
+        overflow: auto;
+        background: var(--white);
+        border-radius: 1rem;
+        border: solid 0.1rem var(--greyMiddleLight);
+        width: 100%;
+        padding: 1rem;
+    }
+}
+
+.option {
+    background: none;
+    border: none;
+    cursor: default;
+    padding: 1rem;
+    text-align: left;
+
+    &:active,
+    &:focus,
+    &:hover {
+        background: var(--greyLight);
+        border: 0;
+        outline: 0;
+    }
+}
+
+.optionLabel {
+    font-size: 1.25rem;
+    color: var(--greyMiddleDark);
+    font-weight: var(--semiBold);
+}

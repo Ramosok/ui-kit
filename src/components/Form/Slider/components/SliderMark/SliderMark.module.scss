@@ -1,0 +1,29 @@
+@import 'src/core/styles/mixins';
+
+.sliderRoot {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    &[data-orientation='horizontal'] {
+        height: 1rem;
+    }
+}
+
+.sliderThumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.icon {
+    @include change-svg-size(1rem);
+}

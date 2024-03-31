@@ -1,0 +1,74 @@
+@keyframes fadein {
+    from {
+        right: -3rem;
+        opacity: 0;
+    }
+    to {
+        right: 0;
+        opacity: 1;
+    }
+}
+
+.toast {
+    background-color: var(--white);
+    border-radius: 1rem;
+    min-width: 20rem;
+    height: 13rem;
+    margin-top: 2rem;
+    display: flex;
+    position: relative;
+    box-shadow: 0 0.2rem 2rem rgba(38, 36, 131, 0.25);
+}
+
+[data-state='openToast'] {
+    visibility: visible;
+    animation: fadein 0.5s;
+    overflow-x: unset;
+}
+
+.toastContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem 3rem;
+    width: 100%;
+}
+
+.toastCloseBtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    background-color: transparent;
+    color: var(--blue);
+    font-size: 16px;
+    margin-top: 8px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.closeIcon {
+    width: 3rem;
+    height: 3rem;
+}
+
+.toastIcon {
+    color: var(--blue);
+    margin-bottom: 1rem;
+    svg {
+        width: 6rem;
+        height: 6rem;
+    }
+}
+
+.toastText {
+    color: var(--blue);
+    font-weight: var(--semiBold);
+}
+
+.containerToastStories {
+    position: fixed;
+    bottom: 2rem;
+    right: 3rem;
+}

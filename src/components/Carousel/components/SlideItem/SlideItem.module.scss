@@ -1,0 +1,11 @@
+.slideItem {
+    background: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.8;
+}
+
+.activeSlide {
+    opacity: 1;
+}

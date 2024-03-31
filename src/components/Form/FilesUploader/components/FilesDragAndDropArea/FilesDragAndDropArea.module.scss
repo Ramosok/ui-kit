@@ -1,0 +1,41 @@
+@import 'src/core/styles/mixins';
+
+.container {
+    position: relative;
+}
+
+.dragOverContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(57, 78, 90, 0.2);
+    backdrop-filter: blur(2px);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.2s, opacity 0.2s linear;
+
+    &.open {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+.dragOverCircle {
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--greyMiddleDark);
+    border-radius: 50%;
+}
+
+.dragOverIcon {
+    @include change-svg-size(2rem);
+}

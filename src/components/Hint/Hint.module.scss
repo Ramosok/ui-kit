@@ -1,0 +1,23 @@
+.hint {
+    display: flex;
+    align-items: center;
+    color: var(--greyMiddleDark);
+
+    &.errorType {
+        padding: 1rem;
+        background: var(--pinkLight);
+        border-radius: 1rem;
+    }
+}
+
+.hintTitle {
+    font-size: 1.25rem;
+    font-weight: var(--semiBold);
+    margin-left: 1.25rem;
+}
+
+.icon {
+    &.errorType {
+        color: var(--error);
+    }
+}

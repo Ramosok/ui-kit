@@ -1,0 +1,34 @@
+.triggerLabel {
+    font-size: 1.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: var(--semiBold);
+
+    &.disabled {
+        color: var(--greyMiddleLight);
+    }
+}
+
+.triggerIcon {
+    color: var(--blue);
+    transition: transform 200ms cubic-bezier(0.87, 0, 0.13, 1);
+    margin-left: 1rem;
+    cursor: pointer;
+
+    &.opened {
+        transform: rotate(180deg);
+    }
+
+    &.disabled {
+        color: var(--greyMiddleLight);
+    }
+}
+
+.triggerSelectValue {
+    color: var(--greyDark);
+}
+
+.triggerPlaceholder {
+    color: var(--greyMiddleLight);
+}

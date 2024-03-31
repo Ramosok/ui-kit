@@ -1,0 +1,38 @@
+@mixin search-input-left-block {
+    position: absolute;
+    right: 1.5rem;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.container {
+    position: relative;
+}
+
+.searchInput {
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+.input {
+    padding-right: 5rem;
+}
+
+.loader {
+    border-color: var(--blue);
+    border-bottom-color: transparent;
+}
+
+.loaderContainer {
+    @include search-input-left-block;
+
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    @include search-input-left-block;
+
+    color: var(--blue);
+}

@@ -1,0 +1,86 @@
+.inputContainer {
+    display: flex;
+    font-size: 2rem;
+    flex-direction: column;
+    padding: 1rem 0 2rem;
+    position: relative;
+}
+
+.select {
+    cursor: pointer;
+    appearance: none;
+    background-color: var(--greyLight);
+    font-size: 1.5rem;
+    color: var(--greyDark);
+    padding: 1.5rem;
+    font-weight: var(--semiBold);
+    border: 1px solid var(--greyMiddleLight);
+    border-radius: 1rem;
+    text-overflow: ellipsis;
+    height: 5rem;
+    outline: none;
+    width: 100%;
+
+    &:active,
+    &:focus {
+        border: 1px solid var(--blue);
+        box-sizing: border-box;
+    }
+}
+
+.option {
+    color: var(--greyDark);
+}
+
+.placeholder {
+    color: var(--greyMiddleLight);
+}
+
+.optionPlaceholder {
+    display: none;
+}
+
+.selectIcon {
+    position: absolute;
+    top: 2.1rem;
+    right: 1rem;
+    cursor: pointer;
+    color: var(--blue);
+    transition: transform 200ms cubic-bezier(0.87, 0, 0.13, 1);
+    pointer-events: none;
+
+    &.opened {
+        transform: rotate(180deg);
+    }
+
+    &.disabled {
+        color: var(--greyMiddleLight);
+        background: none;
+    }
+}
+
+.disabled {
+    color: var(--greyMiddleLight);
+}
+
+.inputError {
+    border-color: var(--error);
+    &:active,
+    &:focus {
+        border-color: var(--error);
+    }
+}
+
+.errorLabel {
+    color: var(--error);
+    font-weight: var(--semiBold);
+    min-height: 2rem;
+    padding-top: 1rem;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}

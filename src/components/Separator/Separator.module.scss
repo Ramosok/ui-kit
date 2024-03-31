@@ -1,0 +1,13 @@
+.separator {
+    border-bottom: solid 1px;
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.primary {
+    border-color: var(--mainColor);
+}
+
+.secondary {
+    border-color: var(--greyMiddleLight);
+}

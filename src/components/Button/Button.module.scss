@@ -1,11 +1,72 @@
 .button {
-  cursor: pointer;
-  border: none;
-  background: var(--primary);
-  color: var(--secondaryTextColor);
+    position: relative;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    border: none;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: var(--semiBold);
+    justify-content: center;
+}
 
-  font-size: 2.5rem;
-  font-weight: var(--semiBold);
-  padding: 1rem 2rem;
-  border-radius: 0.2rem;
+.withPrefixPostfix {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    svg {
+        margin-right: 1rem;
+    }
+}
+
+.primary {
+    background-color: var(--mainColor);
+    color: var(--white);
+    &:hover {
+        background-color: var(--mainColorMix);
+    }
+    &:disabled {
+        background-color: var(--pink);
+    }
+}
+
+.secondary {
+    background-color: var(--blueMiddle);
+    color: var(--greyDark);
+    &:hover {
+        color: var(--mainColor);
+    }
+    &:disabled {
+        background-color: rgba(var(--blueMiddleRGB), 0.3);
+        color: rgba(var(--greyDarkRGB), 0.3);
+    }
+}
+
+.white {
+    background-color: var(--white);
+    color: var(--mainColor);
+    &:hover {
+        color: var(--mainColor);
+    }
+    &:disabled {
+        background-color: rgba(var(--whiteRGB), 0.3);
+        color: rgba(var(--mainColorRGB), 0.3);
+    }
+}
+
+.light {
+    background-color: var(--greyLight);
+    color: var(--greyDark);
+    &:hover {
+        background-color: var(--blueLight);
+    }
+    &:disabled {
+        background-color: rgba(var(--greyLightRGB), 0.3);
+        color: rgba(var(--greyDarkRGB), 0.3);
+    }
 }
