@@ -1,0 +1,46 @@
+@mixin carousel-arrow-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white);
+    border: none;
+}
+
+@mixin carousel-arrow {
+    height: 2.5rem;
+    width: 2.5rem;
+    cursor: pointer;
+    color: var(--mainRed);
+}
+
+.preIconContainer {
+    @include carousel-arrow-container;
+}
+
+.nextIconContainer {
+    @include carousel-arrow-container;
+
+    right: 0;
+}
+
+.prevIcon {
+    @include carousel-arrow;
+
+    transform: rotate(90deg);
+}
+
+.nextIcon {
+    @include carousel-arrow;
+
+    transform: rotate(-90deg);
+}
+
+.disableIcon {
+    cursor: default;
+    color: var(--pink);
+}

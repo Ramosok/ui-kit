@@ -1,0 +1,14 @@
+$container-max-widths: (
+    xs: 0,
+    sm: 600px,
+    md: 905px,
+    lg: 1240px,
+    xl: 1241px,
+    xxl: 1242px,
+);
+
+@mixin media-breakpoint-up($size) {
+    @media (min-width: map-get($container-max-widths, $size)) {
+        @content;
+    }
+}

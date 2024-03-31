@@ -1,0 +1,15 @@
+.error {
+    align-items: center;
+    color: var(--error);
+    display: flex;
+    font-size: 1.25rem;
+    font-weight: var(--semiBold);
+}
+
+.errorIcon {
+    max-width: 1.5rem;
+    max-height: 1.5rem;
+    min-height: 1.5rem;
+    min-width: 1.5rem;
+    margin-right: 0.5rem;
+}

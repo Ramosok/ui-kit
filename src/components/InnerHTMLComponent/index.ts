@@ -1,0 +1,1 @@
+export { InnerHTMLComponent } from './InnerHTMLComponent';

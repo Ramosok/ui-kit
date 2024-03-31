@@ -1,0 +1,39 @@
+.dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.6rem;
+}
+
+.dotContainer {
+    cursor: pointer;
+    width: 0.6rem;
+    height: 0.6rem;
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0 0.5rem;
+}
+
+.dot {
+    border: none;
+    width: 0.6rem;
+    height: 0.6rem;
+    background: var(--greyMiddleLight);
+    border-radius: 50%;
+    margin: 0 0.5rem;
+    padding: 0.2rem;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.activeDot {
+    transform: scale(1.5);
+    opacity: 1;
+}
+
+.dot:focus {
+    outline: none;
+}

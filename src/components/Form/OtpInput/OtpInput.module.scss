@@ -1,0 +1,64 @@
+@import 'src/core/styles/mixins';
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem 0 2rem;
+    position: relative;
+}
+
+.otpInputGroup {
+    display: flex;
+}
+
+.input {
+    display: flex;
+    text-align: center;
+    width: 5rem;
+    height: 5rem;
+    border: 1px solid transparent;
+    border-radius: 0.8rem;
+    background-color: var(--greyLight);
+    padding: 0;
+    margin-right: auto;
+    font-size: 1.5rem;
+    font-weight: var(--semiBold);
+
+    &:active,
+    &:focus {
+        border-color: var(--blue);
+        color: var(--blue);
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &::selection {
+        background: initial;
+    }
+
+    @include media-breakpoint-up(sm) {
+        margin-right: 3rem;
+    }
+}
+
+.inputError {
+    border: 1px solid var(--mainRed);
+}
+
+.inputDisabled {
+    color: var(--greyMiddleLight);
+    pointer-events: none;
+}
+
+.errorLabel {
+    color: var(--error);
+    font-weight: var(--semiBold);
+    min-height: 2rem;
+    padding-top: 1rem;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,34 @@
+.checkboxComponent {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0 2rem;
+}
+
+.checkbox {
+    background-color: var(--white);
+    min-width: 3rem;
+    min-height: 3rem;
+    border-radius: 0.5rem;
+    border: solid 1px var(--greyMiddleDark);
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+    justify-content: center;
+    &:active,
+    &:focus {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    &[data-state='checked'] {
+        background-color: var(--blue);
+        width: 2.5rem;
+        height: 2.5rem;
+        &:disabled {
+            background-color: var(--blueMiddle);
+        }
+    }
+}
+
+.checkIcon {
+    color: var(--white);
+}

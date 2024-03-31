@@ -1,0 +1,59 @@
+.tooltipContentClass {
+    border: 1px solid var(--greyMiddleLight);
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 35rem;
+    user-select: none;
+    pointer-events: none;
+    box-shadow: 0 0 2rem rgba(147, 161, 169, 0.24);
+    z-index: 1;
+    outline: none;
+}
+
+.arrow {
+    min-width: 0.5rem;
+    min-height: 1rem;
+}
+
+.primary {
+    background-color: var(--mainBlue);
+    color: var(--white);
+    & .arrow {
+        fill: var(--mainBlue);
+    }
+}
+
+.light {
+    background-color: var(--white);
+    color: var(--greyDark);
+    & .arrow {
+        fill: var(--greyLight);
+    }
+}
+
+.triggerContainer {
+    pointer-events: none;
+    background: none;
+    border: none;
+}
+
+.triggerWrapper {
+    display: inline-block;
+}
+
+.wrapperTooltip {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.infoIcon {
+    min-height: 3rem;
+    min-width: 3rem;
+}

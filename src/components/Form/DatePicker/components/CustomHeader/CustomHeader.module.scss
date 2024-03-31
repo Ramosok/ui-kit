@@ -1,0 +1,60 @@
+$datePickerMonthArrowSize: 2.5rem;
+
+@mixin date-picker-month-arrow {
+    cursor: pointer;
+    min-height: $datePickerMonthArrowSize;
+    min-width: $datePickerMonthArrowSize;
+    height: $datePickerMonthArrowSize;
+    width: $datePickerMonthArrowSize;
+}
+
+.arrowButton {
+    background: none;
+    border: none;
+    width: fit-content;
+    height: fit-content;
+    padding: 0;
+}
+
+.customHeaderContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    width: 100%;
+    padding: 0 1.5rem;
+    box-sizing: border-box;
+}
+
+.centerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    flex-grow: 1;
+}
+
+.doubleArrowLeft,
+.doubleArrowRight {
+    cursor: pointer;
+}
+
+.doubleArrowLeft {
+    transform: rotate(180deg);
+}
+
+.arrowLeft {
+    @include date-picker-month-arrow;
+
+    transform: rotate(90deg);
+}
+
+.arrowRight {
+    @include date-picker-month-arrow;
+
+    transform: rotate(270deg);
+}
+
+.dateBlock {
+    font-size: 1.4rem;
+    font-weight: var(--semiBold);
+}

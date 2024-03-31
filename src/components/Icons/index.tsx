@@ -1,19 +1,101 @@
-import React, { HTMLProps, FC } from "react";
+import React, { type FC, type HTMLProps } from 'react';
 
-import { ReactComponent as CheckIconComponent } from "../../core/assets/icons/check.svg";
-import { ReactComponent as QuestionMarkIconComponent } from "../../core/assets/icons/question-mark.svg";
-import { ReactComponent as UserIconComponent } from "../../core/assets/icons/user.svg";
+import { ReactComponent as EyeIconComponent } from '../../core/assets/img/eye.svg';
+import { ReactComponent as ArrowIconComponent } from '../../core/assets/img/arrow.svg';
+import { ReactComponent as EyeCrossedIconComponent } from '../../core/assets/img/eye-crossed.svg';
+import { ReactComponent as ClipIconComponent } from '../../core/assets/img/paperclip.svg';
+import { ReactComponent as DeleteIconComponent } from '../../core/assets/img/x.svg';
+import { ReactComponent as FileIconComponent } from '../../core/assets/img/file.svg';
+import { ReactComponent as TengeIconComponent } from '../../core/assets/img/tenge.svg';
+import { ReactComponent as CalendarIconComponent } from '../../core/assets/img/calendar.svg';
+import { ReactComponent as InfoIconComponent } from '../../core/assets/img/info.svg';
+import { ReactComponent as InfoFillIconComponent } from '../../core/assets/img/info-fill.svg';
+import { ReactComponent as InfoDropIconComponent } from '../../core/assets/img/info-drop.svg';
+import { ReactComponent as DropsIconComponent } from '../../core/assets/img/drops.svg';
+import { ReactComponent as CheckIconComponent } from '../../core/assets/img/check.svg';
+import { ReactComponent as ArrowRightIconComponent } from '../../core/assets/img/arrowRight.svg';
+import { ReactComponent as ArrowUpIconComponent } from '../../core/assets/img/arrowUp.svg';
+import { ReactComponent as DoubleArrowIconComponent } from '../../core/assets/img/doubleArrows.svg';
+import { ReactComponent as BlockedIconComponent } from '../../core/assets/img/blocked.svg';
+import { ReactComponent as CancelIconComponent } from '../../core/assets/img/cancel.svg';
+import { ReactComponent as CheckCircleFilledIconComponent } from '../../core/assets/img/check-circle-filled.svg';
+import { ReactComponent as CopyIconComponent } from '../../core/assets/img/copy.svg';
+import { ReactComponent as DelayIconComponent } from '../../core/assets/img/delay.svg';
+import { ReactComponent as DoorIconComponent } from '../../core/assets/img/door.svg';
+import { ReactComponent as DownloadIconComponent } from '../../core/assets/img/download.svg';
+import { ReactComponent as EditIconComponent } from '../../core/assets/img/edit.svg';
+import { ReactComponent as EnvelopeIconComponent } from '../../core/assets/img/envelope.svg';
+import { ReactComponent as InviteIconComponent } from '../../core/assets/img/invite.svg';
+import { ReactComponent as ListIconComponent } from '../../core/assets/img/list.svg';
+import { ReactComponent as LockIconComponent } from '../../core/assets/img/lock.svg';
+import { ReactComponent as MinusIconComponent } from '../../core/assets/img/minus.svg';
+import { ReactComponent as NumeroIconComponent } from '../../core/assets/img/numero.svg';
+import { ReactComponent as PersonIconComponent } from '../../core/assets/img/person.svg';
+import { ReactComponent as PointIconComponent } from '../../core/assets/img/point.svg';
+import { ReactComponent as PlusIconComponent } from '../../core/assets/img/plus.svg';
+import { ReactComponent as QuestionIconComponent } from '../../core/assets/img/question.svg';
+import { ReactComponent as RestoreIconComponent } from '../../core/assets/img/restore.svg';
+import { ReactComponent as SettingsIconComponent } from '../../core/assets/img/settings.svg';
+import { ReactComponent as SmsIconComponent } from '../../core/assets/img/sms.svg';
+import { ReactComponent as SuccessIconComponent } from '../../core/assets/img/success.svg';
+import { ReactComponent as ScheduleIconComponent } from '../../core/assets/img/sсhedule.svg';
+import { ReactComponent as WalletIconComponent } from '../../core/assets/img/wallet.svg';
+import { ReactComponent as LockOnIconComponent } from '../../core/assets/img/lockOn.svg';
+import { ReactComponent as SearchIconComponent } from '../../core/assets/img/search.svg';
+import { ReactComponent as DragAndDropIconComponent } from '../../core/assets/img/dragAndDrop.svg';
+import { ReactComponent as MarkIconComponent } from '../../core/assets/img/mark.svg';
 
 export type IconProps = Partial<HTMLProps<SVGElement>>;
 
-const DEFAULT_SIZE = 25;
+const DEFAULT_ICON_SIZE = 24;
 
-const createIcon =
-  (Icon: FC<IconProps>): FC<IconProps> =>
-  (props: IconProps) => (
-    <Icon width={DEFAULT_SIZE} height={DEFAULT_SIZE} {...props} />
-  );
+const createIconComponent =
+    (IconComponent: FC<IconProps>): FC<IconProps> =>
+    (props: IconProps) =>
+        <IconComponent width={DEFAULT_ICON_SIZE} height={DEFAULT_ICON_SIZE} {...props} />;
 
-export const CheckIcon = createIcon(CheckIconComponent);
-export const QuestionMarkIcon = createIcon(QuestionMarkIconComponent);
-export const UserIcon = createIcon(UserIconComponent);
+export const EyeIcon = createIconComponent(EyeIconComponent);
+export const EyeCrossedIcon = createIconComponent(EyeCrossedIconComponent);
+export const CloseIcon = createIconComponent(DeleteIconComponent);
+export const ArrowIcon = createIconComponent(ArrowIconComponent);
+export const ClipIcon = createIconComponent(ClipIconComponent);
+export const DeleteIcon = createIconComponent(DeleteIconComponent);
+export const FileIcon = createIconComponent(FileIconComponent);
+export const TengeIcon = createIconComponent(TengeIconComponent);
+export const CalendarIcon = createIconComponent(CalendarIconComponent);
+export const InfoIcon = createIconComponent(InfoIconComponent);
+export const DoubleArrowIcon = createIconComponent(DoubleArrowIconComponent);
+export const InfoFillIcon = createIconComponent(InfoFillIconComponent);
+export const InfoDropIcon = createIconComponent(InfoDropIconComponent);
+export const DropsIcon = createIconComponent(DropsIconComponent);
+export const CheckIcon = createIconComponent(CheckIconComponent);
+export const ArrowRightIcon = createIconComponent(ArrowRightIconComponent);
+export const ArrowUpIcon = createIconComponent(ArrowUpIconComponent);
+export const BlockedIcon = createIconComponent(BlockedIconComponent);
+export const CancelIcon = createIconComponent(CancelIconComponent);
+export const CheckCircleFilledIcon = createIconComponent(CheckCircleFilledIconComponent);
+export const CopyIcon = createIconComponent(CopyIconComponent);
+export const DelayIcon = createIconComponent(DelayIconComponent);
+export const DoorIcon = createIconComponent(DoorIconComponent);
+export const DownloadIcon = createIconComponent(DownloadIconComponent);
+export const EditIcon = createIconComponent(EditIconComponent);
+export const EnvelopeIcon = createIconComponent(EnvelopeIconComponent);
+export const InviteIcon = createIconComponent(InviteIconComponent);
+export const ListIcon = createIconComponent(ListIconComponent);
+export const LockIcon = createIconComponent(LockIconComponent);
+export const MinusIcon = createIconComponent(MinusIconComponent);
+export const NumeroIcon = createIconComponent(NumeroIconComponent);
+export const PersonIcon = createIconComponent(PersonIconComponent);
+export const PlusIcon = createIconComponent(PlusIconComponent);
+export const PointIcon = createIconComponent(PointIconComponent);
+export const QuestionIcon = createIconComponent(QuestionIconComponent);
+export const RestoreIcon = createIconComponent(RestoreIconComponent);
+export const SettingsIcon = createIconComponent(SettingsIconComponent);
+export const SmsIcon = createIconComponent(SmsIconComponent);
+export const SuccessIcon = createIconComponent(SuccessIconComponent);
+export const ScheduleIcon = createIconComponent(ScheduleIconComponent);
+export const WalletIcon = createIconComponent(WalletIconComponent);
+export const LockOnIcon = createIconComponent(LockOnIconComponent);
+export const SearchIcon = createIconComponent(SearchIconComponent);
+export const DragAndDropIcon = createIconComponent(DragAndDropIconComponent);
+export const MarkIcon = createIconComponent(MarkIconComponent);

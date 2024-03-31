@@ -1,0 +1,32 @@
+$maxOptionsContainerHeight: 30rem;
+
+.optionsContainer {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    max-height: $maxOptionsContainerHeight;
+    overflow: auto;
+}
+
+.option {
+    background: none;
+    border: none;
+    cursor: default;
+    padding: 1rem;
+    text-align: left;
+
+    &.selected,
+    &:active,
+    &:focus,
+    &:hover {
+        background: var(--greyLight);
+        border: 0;
+        outline: 0;
+    }
+}
+
+.optionLabel {
+    font-size: 1.25rem;
+    color: var(--greyMiddleDark);
+    font-weight: var(--semiBold);
+}

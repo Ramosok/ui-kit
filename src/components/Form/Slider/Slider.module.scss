@@ -1,0 +1,50 @@
+.sliderRoot {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    &[data-orientation='horizontal'] {
+        height: 3rem;
+    }
+}
+
+.sliderTrack {
+    background-color: var(--greyMiddleLight);
+    position: relative;
+    flex-grow: 1;
+    border-radius: 5rem;
+    &[data-orientation='horizontal'] {
+        height: 1rem;
+    }
+    &[data-disabled] {
+        background-color: var(--greyLight);
+    }
+}
+
+.sliderRange {
+    position: absolute;
+    background-color: var(--mainRed);
+    height: 100%;
+    border-radius: 5rem;
+    &[data-disabled] {
+        border-color: var(--pink);
+        background-color: var(--pink);
+    }
+}
+
+.sliderThumb {
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: var(--mainColor);
+    border-radius: 50%;
+    border: solid 0.5rem var(--mainColor);
+    box-sizing: content-box;
+    &[data-disabled] {
+        border-color: var(--pink);
+        background-color: var(--pink);
+    }
+    &.thumbMinEqualMax {
+        transform: translateX(50%);
+    }
+}
