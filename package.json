@@ -3,7 +3,7 @@
     "publishConfig": {
         "registry": "https://npm.pkg.github.com/ramosok"
     },
-    "version": "2.0.0",
+    "version": "2.1.0",
     "description": "",
     "homepage": "https://npm.pkg.github.com/ramosok",
     "scripts": {
@@ -45,8 +45,8 @@
         "react-number-format": "5.1.2"
     },
     "peerDependencies": {
-        "react": "17.0.2",
-        "react-dom": "17.0.2"
+        "react": "18.2.0",
+        "react-dom": "18.2.0"
     },
     "devDependencies": {
         "@babel/core": "7.20.2",
@@ -70,8 +70,8 @@
         "@svgr/webpack": "6.5.1",
         "@types/debounce": "1.2.1",
         "@types/dompurify": "3.0.2",
-        "@types/react": "17.0.19",
-        "@types/react-dom": "17.0.9",
+        "@types/react": "18.2.73",
+        "@types/react-dom": "18.2.23",
         "@typescript-eslint/eslint-plugin": "5.33.0",
         "@typescript-eslint/parser": "5.33.0",
         "eslint": "8.2.0",
